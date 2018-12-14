@@ -1,0 +1,17 @@
+{
+  "name": "todos-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [],
+  "author": "Naga Chaitanya Konada <nkonada@deloitte.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "7.0.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3"
+  }
+}
