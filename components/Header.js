@@ -1,5 +1,5 @@
 import {withRouter} from 'next/router';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Dropdown } from 'semantic-ui-react';
 import { Component } from 'react';
 
 class Header extends Component{
@@ -21,7 +21,7 @@ class Header extends Component{
     render() {
         const { activeState } = this.state;
         return (
-            <Menu style={{ marginTop : '2rem' }}>
+            <Menu style={{ marginTop : '2rem' }} secondary>
                 <Menu.Item 
                     onClick={() => this.routerPush('/')} 
                     active={ activeState === '/'} 
@@ -30,6 +30,24 @@ class Header extends Component{
                     onClick={() => this.routerPush('/about')} 
                     active={ activeState === '/about'}
                 >About Us</Menu.Item>
+                <Dropdown text='Apps' item>
+                    <Dropdown.Menu>
+                        <Dropdown.Item text='Todos App' 
+                            onClick={() => this.routerPush('/todos')} 
+                            active={ activeState === '/todos'}
+                        />
+                        <Dropdown.Item text='Open...' description='ctrl + o' />
+                        <Dropdown.Item text='Save as...' description='ctrl + s' />
+                        <Dropdown.Item text='Rename' description='ctrl + r' />
+                        <Dropdown.Item text='Make a copy' />
+                        <Dropdown.Item icon='folder' text='Move to folder' />
+                        <Dropdown.Item icon='trash' text='Move to trash' />
+                        <Dropdown.Divider />
+                        <Dropdown.Item text='Download As...' />
+                        <Dropdown.Item text='Publish To Web' />
+                        <Dropdown.Item text='E-mail Collaborators' />
+                    </Dropdown.Menu>
+                </Dropdown>
             </Menu>
         )
     }
