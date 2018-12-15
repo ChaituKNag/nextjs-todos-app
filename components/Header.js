@@ -1,4 +1,4 @@
-import {withRouter} from 'next/router';
+import { withRouter } from 'next/router';
 import { Menu, Dropdown } from 'semantic-ui-react';
 import { Component } from 'react';
 
@@ -6,9 +6,11 @@ class Header extends Component{
     
     constructor(props) {
         super(props);
+        
         this.state = {
             activeState : this.props.router.route
         }
+
     }
 
     routerPush = (url) => {
@@ -21,7 +23,7 @@ class Header extends Component{
     render() {
         const { activeState } = this.state;
         return (
-            <Menu style={{ marginTop : '2rem' }} secondary>
+            <Menu style={{ marginTop : '1rem' }}>
                 <Menu.Item 
                     onClick={() => this.routerPush('/')} 
                     active={ activeState === '/'} 

@@ -9,7 +9,7 @@ const wrapper = {
 
 const BasicLayout = (props) => (
     <Container style={wrapper}>
-        <Header />
+        <Header/>
         {props.children}
     </Container>
 );
