@@ -10,10 +10,10 @@ export default class MyDocument extends Document {
       return (
         <html>
           <Head>
-            <style>{`body { margin: 0 } /* custom! */`}</style>
+            <style>{`body { margin: 0; height: auto; } /* custom! */`}</style>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           </Head>
-          <body className="custom_class">
+          <body>
             <Main />
             <NextScript />
           </body>

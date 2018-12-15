@@ -1,17 +1,14 @@
-import Link from 'next/link';
+import Router from 'next/router';
+import { Menu } from 'semantic-ui-react';
 
-const linkStyle = {
-    marginRight: 15
-}
+const routerPush = (url) => () => Router.push(url);
 
 const Header = () => (
-    <div>
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
-        </Link>
-    </div>
+    <Menu style={{
+        marginTop: '2rem'
+    }}>
+        <Menu.Item onClick={routerPush('/')}>Home</Menu.Item>
+        <Menu.Item onClick={routerPush('/about')}>About Us</Menu.Item>
+    </Menu>
 );
 export default Header
