@@ -1,15 +1,18 @@
-import Router from 'next/router';
+import {withRouter} from 'next/router';
 import { Menu } from 'semantic-ui-react';
 import { Component } from 'react';
 
-class Header extends Component{ 
-
-    state = {
-        activeState: Router.route
+class Header extends Component{
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeState : this.props.router.route
+        }
     }
 
     routerPush = (url) => {
-        Router.push(url);
+        this.props.router.push(url);
         this.setState({
             activeState: url
         });
@@ -31,4 +34,4 @@ class Header extends Component{
         )
     }
 };
-export default Header
+export default withRouter(Header);
