@@ -15,6 +15,11 @@
   "dependencies": {
     "next": "7.0.2",
     "react": "16.6.3",
-    "react-dom": "16.6.3"
+    "react-dom": "16.6.3",
+    "semantic-ui-css": "2.4.1",
+    "semantic-ui-react": "0.84.0",
+    "@zeit/next-css": "^1.0.1",
+    "file-loader": "^1.1.11",
+    "url-loader": "^1.0.1"
   }
 }

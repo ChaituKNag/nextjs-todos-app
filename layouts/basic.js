@@ -1,19 +1,17 @@
+import { Container } from 'semantic-ui-react';
 import Header from '../components/Header';
 
+import 'semantic-ui-css/semantic.min.css';
+
 const wrapper = {
-    margin: 'auto',
-    marginTop: 20,
-    padding: 10,
-    border: '10px solid #b0b0b0',
-    backgroundColor: 'lightgrey',
-    maxWidth: 960
+    
 }
 
 const BasicLayout = (props) => (
-    <div style={wrapper}>
+    <Container style={wrapper}>
         <Header />
         {props.children}
-    </div>
+    </Container>
 );
 
 export default BasicLayout;
