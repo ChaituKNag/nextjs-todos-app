@@ -2,7 +2,7 @@ import BasicLayout from '../layouts/basic';
 
 function Index() {
   return (
-    <BasicLayout>
+    <BasicLayout bgColor="lightpink">
         <h1>Hello World, this is the index page.</h1>
     </BasicLayout>
   );

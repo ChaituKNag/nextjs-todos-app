@@ -27,7 +27,7 @@ class Todos extends Component {
   
   render() {
     return (
-      <BasicLayout>
+      <BasicLayout bgColor="#eee">
         <h1>Todos</h1>
         <TodosList todos = {this.state.todos} toggleTodo = {this.toggleTodo} />
         <AddTodo addTodo={this.addTodo}/>

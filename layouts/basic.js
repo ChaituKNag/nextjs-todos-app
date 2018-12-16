@@ -17,6 +17,11 @@ const BasicLayout = (props) => (
         </Head>
         <Header/>
         {props.children}
+        <style global jsx>{`
+            body {
+                background-color: ${props.bgColor};
+            }    
+        `}</style>
     </Container>
 );
 
