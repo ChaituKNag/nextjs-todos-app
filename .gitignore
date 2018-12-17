@@ -1,5 +1,3 @@
 node_modules/
 .next/
-out/**
-!out/
-!out/google3914dc9d0421b7aa.html
+out/

@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export && cp google3914dc9d0421b7aa.html ./out/"
   },
   "keywords": [],
   "author": "Naga Chaitanya Konada <nkonada@deloitte.com>",
