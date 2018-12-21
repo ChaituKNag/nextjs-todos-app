@@ -4,22 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "export": "next build && next export && cp google3914dc9d0421b7aa.html ./out/"
   },
   "keywords": [],
   "author": "Naga Chaitanya Konada <nkonada@deloitte.com>",
   "license": "MIT",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "body-parser": "1.18.3",
+    "dotenv": "6.2.0",
+    "express": "4.16.4",
+    "express-session": "1.15.6",
+    "file-loader": "^1.1.11",
+    "firebase": "5.7.1",
+    "firebase-admin": "6.4.0",
+    "isomorphic-unfetch": "3.0.0",
     "next": "7.0.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "semantic-ui-css": "2.4.1",
     "semantic-ui-react": "0.84.0",
-    "@zeit/next-css": "^1.0.1",
-    "file-loader": "^1.1.11",
-    "url-loader": "^1.0.1"
+    "session-file-store": "1.2.0",
+    "url-loader": "^1.0.1",
+    "webpack": "4.28.1"
   }
 }
